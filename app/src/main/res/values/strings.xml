@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">videoStreaming</string>
+    <string name="logoText">Video Streaming</string>
 </resources>
