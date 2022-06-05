@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="0dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="402dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="443dp"
+        android:orientation="horizontal"
+        android:translationY="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail">
+
+        <ImageView
+            android:id="@+id/channel_logo"
+            android:layout_width="66dp"
+            android:layout_height="73dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <LinearLayout
+            android:layout_width="343dp"
+            android:layout_height="73dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom list view in andriod studio"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/video_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Channel  .  23K   5 days ago  "
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:translationY="5" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/option_button"
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:layout_weight="1"
+            android:scaleX="0.3"
+            android:scaleY="0.3"
+            app:srcCompat="@drawable/ic___vertical_dots" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
